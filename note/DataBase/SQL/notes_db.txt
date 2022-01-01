@@ -1,0 +1,21 @@
+USE [notes_db]
+GO
+/****** Object:  Table [dbo].[notes_tb]    Script Date: 07/12/2021 18:11:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[notes_tb](
+	[_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Titel] [varchar](50) NOT NULL,
+	[note] [varchar](max) NULL,
+ CONSTRAINT [PK_notes_tb] PRIMARY KEY CLUSTERED 
+(
+	[_ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
